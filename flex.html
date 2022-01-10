@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .flexbox-parent{
+            /** Flexbox im CSS besteht immer aus 3 Teilen:**/
+            /** 1. DISPLAY Eigenschaft = flex**/
+            /** 2. justify-content Eigenschaft = Links nach rechts**/
+            /** 3. align-items Eigenschaft = Oben nach unten**/
+            display:flex;
+            justify-content: center; /** Links nach rechts**/
+            align-items: center; /** Oben nach unten**/
+        }
+        .flexbox-child-1{
+            /** Zur Darstellung der gesamten Breite müsen die Kinderelemente die FLEX Eigenschaft haben.**/
+            flex:2; /** 2/3 **/
+            background-color: lightgray;
+            text-align: center;
+        }
+        .flexbox-child-2{
+            /** Zur Darstellung der gesamten Breite müsen die Kinderelemente die FLEX Eigenschaft haben.**/
+            flex:1; /** 1/3 **/
+            background-color: lightpink;
+            text-align: center;
+        }
+        img{
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flexbox Prinzip von einem Abschnitt von links nach rechts-->
+    <div class="flexbox-parent"> <!-- Eltern Flexbox TAG Element DIV-->
+        <div class="flexbox-child-1"> <!-- Kind Element der linken Flexbox -->
+            <img src="https://www.worldofsweets.de/out/pictures/master/product/1/haribo-suesse-brezeln-175g-no1-5808.jpg" alt="haribo">
+            <h2>Haribo Linke Seite</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum cum, at hic vel eaque similique nam ab itaque facilis, fugit dolorem libero amet porro culpa suscipit quia eos aut aliquid!</p>
+            <a href="htttps://www.goole.com">Link zur Haribo</a>
+        </div>
+        <div class="flexbox-child-2"> <!-- Kind Element der rechten Flexbox -->
+            Rechts
+        </div>
+    </div>
+</body>
+</html>
